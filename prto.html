@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcello Julien Manik - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #25316D;
+      --accent: #5F6F94;
+      --bg: #F5F5F5;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+      display: flex;
+      overflow: hidden;
+    }
+    .sidebar {
+      background: var(--primary);
+      color: var(--white);
+      width: 320px;
+      min-width: 260px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--white);
+      margin-bottom: 18px;
+    }
+    .sidebar h2 {
+      margin: 8px 0 4px 0;
+      font-size: 1.3em;
+      font-weight: 700;
+    }
+    .sidebar p {
+      font-size: 0.98em;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .sidebar .section {
+      width: 100%;
+      margin-bottom: 22px;
+    }
+    .sidebar .section h3 {
+      font-size: 1em;
+      border-bottom: 1px solid #445;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.96em;
+    }
+    .sidebar li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .main {
+      flex: 1;
+      padding: 36px 48px;
+      background: var(--white);
+      min-width: 0;
+    }
+    .main h1 {
+      font-size: 2.2em;
+      margin: 0 0 8px 0;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .main h2 {
+      font-size: 1.1em;
+      color: var(--accent);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+    .main .section {
+      margin-bottom: 30px;
+    }
+    .main .section h3 {
+      color: var(--primary);
+      font-size: 1.08em;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+      margin-bottom: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .timeline {
+      margin-left: 8px;
+    }
+    .timeline-item {
+      margin-bottom: 18px;
+    }
+    .timeline-item span {
+      font-weight: bold;
+      color: var(--accent);
+      font-size: 0.98em;
+    }
+    .experience ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    .experience li {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 900px) {
+      .container { flex-direction: column; }
+      .sidebar, .main { width: 100%; min-width: 0; }
+      .main { padding: 28px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="pp.jpg.jpeg" alt="Foto Profil">
+      <h2>Marcello Julien Manik</h2>
+      <p>Siswa SMK Multi Karya Medan, jurusan RPL. Bertanggung jawab, disiplin, jujur, dan berminat pada bidang IT, khususnya Result Teknologi.</p>
+      <div class="section">
+        <h3>Kontak</h3>
+        <ul>
+          <li>📞 +62 82163872941</li>
+          <li>✉️ marcellojulienmanik@gmail.com</li>
+          <li>🏠 Perumahan Puri Medang Tamora, Tj. Morawa</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3>Kemampuan</h3>
+        <ul>
+          <li>Desain Web / Figma</li>
+          <li>Coding</li>
+          <li>Ms.Word & Ms.Excel</li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main">
+      <h1>Marcello Julien Manik</h1>
+      <h2>Pelajar | Rekayasa Perangkat Lunak</h2>
+      <div class="section">
+        <h3>Pendidikan</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>2014–2020</span><br>
+            SD Citra Kasih, Medan
+          </div>
+          <div class="timeline-item">
+            <span>2021–2023</span><br>
+            SMP St. Antonius, Medan
+          </div>
+          <div class="timeline-item">
+            <span>2023–Sekarang</span><br>
+            SMK Multi Karya, Medan
+          </div>
+        </div>
+      </div>
+      <div class="section experience">
+        <h3>Pengalaman</h3>
+        <ul>
+          <li>Mengerjakan proyek website visual (HTML, CSS, Bootstrap)</li>
+          <li>Membuat aplikasi sederhana menggunakan PHP & MySQL</li>
+          <li>Mengelola data dengan Ms.Excel & Ms.Word</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
